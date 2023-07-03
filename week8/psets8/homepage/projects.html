@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body class="text-white">
+
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Projects</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navigation</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <div class=" d-flex justify-content-center align-self-center position-relative mt-5 border border-secondary">
+          <div class="card mb-3">
+            <img src="./images/airbnb_screenshot.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Airbnb</h5>
+              <p class="card-text">A clone of Airbnb with a focus on replicating the user experience.</p>
+              <div class="d-flex justify-content-space-around position-absolute">
+                <a href="https://github.com/bing-me/aiurbnb" class="d-flex justify-content-space-around align-items-center">
+                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="97.5688" viewBox="0 0 100 97.5688" class="github-logo portfolio-logo">
+                    <path d="M59.766,72.247c2.37-.5277,4.79-.9182,7.1181-1.6165,4.7-1.41,8.7469-3.8521,11.4731-8.09a22.7592,22.7592,0,0,0,3.41-9.9767,30.841,30.841,0,0,0,.2092-7.5722,20.3785,20.3785,0,0,0-4.2823-10.276c-.224-.28-.4381-.5682-.6359-.8255a19.1187,19.1187,0,0,0-.5941-13.2362,10.106,10.106,0,0,0-3.9583.2156,31.2214,31.2214,0,0,0-8.6248,4.0172c-.4294.2629-.8577.5276-1.3057.8032a47.5818,47.5818,0,0,0-24.8732-.0134c-4.3316-2.4616-8.4574-5.4059-13.8268-5.0861a18.2046,18.2046,0,0,0-.62,13.3226,18.4635,18.4635,0,0,0-4.7465,9.7906,33.1382,33.1382,0,0,0-.2429,6.4936A26.5245,26.5245,0,0,0,20.5571,60.07a18.7385,18.7385,0,0,0,10.5565,9.7751,38.0288,38.0288,0,0,0,9.6337,2.2838,12.8888,12.8888,0,0,0-3.0291,6.4482c-5.4138,2.8385-10.9292,1.5364-14.2209-3.53a23.1573,23.1573,0,0,0-2.7217-3.36,7.7319,7.7319,0,0,0-4.1874-2.1655,3.4907,3.4907,0,0,0-3.5567.9647c.5231.6141.9049,1.3931,1.5272,1.7371,3.0531,1.6874,4.5142,4.5867,6.0266,7.4915a16.2592,16.2592,0,0,0,2.2893,3.6466c1.9817,2.1254,4.6819,2.8513,7.4811,2.9676,1.939.0806,3.8924-.1921,5.84-.3.3423-.0189.6866-.0027,1.2491-.0027,0,3.2084.0709,6.3085-.0288,9.4031-.0527,1.6388-1.5911,2.5336-3.3662,1.8886a51.7088,51.7088,0,0,1-7.3827-3.1218C12.5113,86.3815,3.58,74.6056.8235,58.6005-1.9706,42.3752,2.3668,28.06,13.5082,15.8983a47.0967,47.0967,0,0,1,24.95-14.5062C53.7316-2.005,67.8272.7608,80.3427,10.29a47.8868,47.8868,0,0,1,18.8452,30.957c2.7382,16.1457-1.46,30.3965-12.4136,42.5972A48.2622,48.2622,0,0,1,66.9264,97.0935a7.5289,7.5289,0,0,1-1.4489.4437A2.3637,2.3637,0,0,1,62.6454,95.27c-.0751-1.01-.0257-2.03-.0235-3.0449.0065-3.046-.0015-6.0922.0305-9.138C62.7068,77.9121,62.4028,76.4418,59.766,72.247Z"/>
+                  </svg>
+                  <h3 class="box-title">Repository</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

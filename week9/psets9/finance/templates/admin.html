@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Admin
+{% endblock %}
+
+{% block main %}
+<h1>User Admin Page</h1>
+<div class="d-flex align-items-start justify-content-center">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link active" id="v-pills-password-tab" data-bs-toggle="pill" data-bs-target="#v-pills-password"
+      type="button" role="tab" aria-controls="v-pills-password" aria-selected="true">Change Password</button>
+    <button class="nav-link" id="v-pills-cash-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cash" type="button"
+      role="tab" aria-controls="v-pills-cash" aria-selected="false">Add Cash</button>
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab"
+      tabindex="0">
+      <h2>Change Password</h2>
+      <form action="{{ url_for('change_password') }}" method="POST">
+        <div class="d-flex align-items-end flex-column">
+          <div>
+            <label for="current_password" class="m-2">Current Password</label>
+            <input type="password" id="current_password" name="current_password" class="m-2"><br>
+          </div>
+          <div>
+            <label for="new_password" class="m-2">New Password</label>
+            <input type="password" id="new_password" name="new_password" class="m-2"><br>
+          </div>
+          <div>
+            <label for="confirm_password" class="m-2">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" class="m-2"><br>
+          </div>
+        </div>
+        <input type="submit" value="Change Password" class="m-2">
+      </form>
+    </div>
+    <div class="tab-pane fade" id="v-pills-cash" role="tabpanel" aria-labelledby="v-pills-cash-tab" tabindex="0">
+      <h2>Add Cash</h2>
+      <form action="{{ url_for('add_cash') }}" method="POST">
+        <label for="cash" class="m-2">Amount of Cash</label>
+        <input type="number" id="cash" name="cash" step="0.01" class="m-2"><br>
+        <input type="submit" value="Add Cash" class="m-2">
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

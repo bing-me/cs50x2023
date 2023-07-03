@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: Has shortest time sorting the sorted text file compared to the random and reversed. Indicating that it made fewer swaps on the sorted file
+
+sort2 uses: Merge sort
+
+How do you know?: The time to sort across the 3 file types are the most similar(i.e. big O & Omega are the same.) and the sort times were shorter compared to sort 1 and sort 3.
+
+sort3 uses: Selection sort
+
+How do you know?: The time to sort across the 3 file types are the most similar(i.e. big O & Omega are the same.) and the sort times were longer compared to sort 2.
