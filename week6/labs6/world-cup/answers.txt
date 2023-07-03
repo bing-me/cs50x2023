@@ -1,0 +1,19 @@
+Times:
+
+10 simulations: 0m0.045s
+100 simulations: 0m0.034s
+1000 simulations: 0m0.050s
+10000 simulations: 0m0.099s
+100000 simulations: 0m0.780s
+1000000 simulations: 0m7.357s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+10 and 100 simulations. The top placed teams were consistent for the results of 1000 simulations and above, however, the results for 10 and 100 were different.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+10000 simulations. If the goal is to charge the maximum amount, we should charge for as many simulations as possible. 10000 simulations would be more consistent than 1000 simulations while considering the marginal increase in total time.

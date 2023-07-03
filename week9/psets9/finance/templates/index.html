@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block main %}
+<h3>Cash Balance: ${{ cash | usd }}</h3>
+
+{% if transactions %}
+<div class="d-flex align-items-center justify-content-center">
+    <table class="table mt-4 w-75">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Total Shares</th>
+                <th>Price Per Share</th>
+                <th>Holding Value</th>
+                <th>Buy</th>
+                <th>Sell</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+            <tr>
+                <td>{{ transaction.symbol }}</td>
+                <td>{{ transaction.total_shares }}</td>
+                <td>${{ transaction.price_per_share | usd }}</td>
+                <td>${{ transaction.holding_value | usd }}</td>
+                <td><a class="btn btn-primary" href="/buy?symbol={{ transaction.symbol }}">Buy</a></td>
+                <td><a class="btn btn-primary" href="/sell?symbol={{ transaction.symbol }}">Sell</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<h4>Total Portfolio Value: ${{ total_value | usd }}</h4>
+{% else %}
+<p>No holdings found.</p>
+{% endif %}
+{% endblock %}
