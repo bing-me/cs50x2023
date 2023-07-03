@@ -2,6 +2,7 @@
 
 My solutions to problem sets and labs of [Harvard's CS50x 2023](https://cs50.harvard.edu/x/2023/).
 Please comply with [academic honesty](https://cs50.harvard.edu/x/2023/honesty/). If you need an explanation on any of my answers, please contact me through my discord linked in my profile.
+[![](https://markdown-videos.vercel.app/youtube/r0z-yIp1PnE)](https://youtu.be/r0z-yIp1PnE)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r0z-yIp1PnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
