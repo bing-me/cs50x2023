@@ -46,10 +46,10 @@ Please comply with [academic honesty](https://cs50.harvard.edu/x/2023/honesty/).
 
 ### Practice problems 3
 
-* [Atoi](week3/problems3/atoi/atoi.c)
-* [Max](week3/problems3/max/max.c)
-* [Snackbar](week3/problems3/snackbar/snackbar.c)
-* [Temps](week3/problems3/temps/temps.c)
+* [Atoi](week3/practice3/atoi/atoi.c)
+* [Max](week3/practice3/max/max.c)
+* [Snackbar](week3/practice3/snackbar/snackbar.c)
+* [Temps](week3/practice3/temps/temps.c)
 
 ### Lab 3
 
